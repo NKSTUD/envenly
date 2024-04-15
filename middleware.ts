@@ -5,16 +5,22 @@ export default authMiddleware({
     publicRoutes: [
         '/',
         '/events/:id',
-        '/api/webhooks/clerk',
-        '/api/webhooks/stripe',
+        '/api/webhook/clerk',
+        '/api/webhook/stripe',
         '/api/uploadthing',
         "/favicon.ico",
+        "/assets/images/logo.svg",
+        "/assets/images/dotted-pattern.png"
     ],
 
     ignoredRoutes:[
-        '/api/webhooks/clerk',
-        '/api/webhooks/stripe',
-        '/api/uploadthing'
+        '/api/webhook/clerk',
+        '/api/webhook/stripe',
+        '/api/uploadthing',
+        "/favicon.ico",
+        "/assets/images/logo.svg",
+        "/assets/images/dotted-pattern.png",
+
     ]
 
 });

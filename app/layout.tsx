@@ -4,7 +4,7 @@ import "./globals.css";
 import {Poppins} from "next/font/google";
 import React from "react";
 import {ClerkProvider} from '@clerk/nextjs'
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const poppins = Poppins({
     subsets: ["latin"],
     weight: ['400', '500', '600', '700'],

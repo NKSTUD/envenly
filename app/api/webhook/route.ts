@@ -96,15 +96,15 @@ export async function POST(req: Request) {
         return NextResponse.json({message: "OK", user: updatedUser})
 
 
-
-
     }
 
 
-    if (eventType=="user.deleted"){
+    if (eventType == "user.deleted") {
 
         const {id} = evt.data
-        const user = await deleteUser(id)
+        const deletedUser = await deleteUser(id!)
+
+        return NextResponse.json({message: 'OK', user: deletedUser})
 
     }
 
